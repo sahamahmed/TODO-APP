@@ -1,0 +1,263 @@
+body{
+    /* background: rgb(63, 63, 63); */
+    background-image: linear-gradient(100deg, #001214, #001f29);
+    transition: 0.3s linear;
+    font-family: cursive;
+    /* background-size: cover; */
+}
+
+.set{
+    /* background: white; */
+    width: 40vw;
+    height: fit-content;
+    /* border: 5px solid black; */
+    border-radius: 5vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+
+.container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vw; 
+    justify-content: center;
+    color: aliceblue;
+}
+
+#cover{
+    margin-top: 10px;
+    width: 4vw;
+    height: 4.5vw;
+    border-radius: 5px;
+    margin-left: 1vw;
+    border: 2px solid darkcyan;
+}
+
+.container2{
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3vw;
+    width: 30vw;
+    margin-top: 2vw;
+    background:white;
+    margin-left: 5vw;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+input{
+    flex: 1;
+    height: 2vw;
+    width: 20vw;
+    background:transparent;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 5vw;
+    margin-left: 3vw;
+    padding: 0.5vw 0;
+    font-size: larger;
+    cursor: text;
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.7); /* Adjust the color as needed */
+    opacity: 1; /* Set opacity to 1 for full visibility */
+}
+
+.container2 button{
+    background-color: aquamarine;
+    height: 3vw;
+    width: 5vw;
+    border: none;
+    padding: 0.5vw 1vw;
+    margin-left: 0;
+    border-radius: 5vw;
+    font-weight: bold;
+    cursor: inherit;
+}
+.container2 button:hover{
+    background-color: aqua;
+    height: 3.4vw;
+    width: 5.2vw;
+}
+
+
+
+ul{
+    margin-top: 25px;
+}
+ul li{
+    min-height: 2vw;
+    max-height: fit-content;
+    list-style: none;
+    font-size: large;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    background-color: rgb(189, 187, 187);
+    margin-bottom: 6px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+ul li::before{
+    content: '';
+    border-radius: 50%;
+    border: 3px solid grey;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url(uncheck2.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 10px;
+}
+ul li.checked{
+    color: rgba(226, 220, 220, 0.89);
+    text-decoration: line-through;
+    font-weight: lighter;
+     background-color: darkgreen; /*rgb(132, 161, 51)*/
+    text-decoration-color: white; /* Change line color to white */
+    text-decoration-thickness: 2px; /* Adjust line thickness as needed */
+    font-weight: normal;
+}
+ul li.checked p{
+    color:  rgba(226, 220, 220, 0.89);;
+}
+
+ul li.checked::before{
+    background-image: url(check.jpg);
+    border: 3px solid green;
+}
+
+ul li button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: cyan;
+    border: 2px solid black;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 450px;
+    cursor: pointer;
+    color: rgb(209, 47, 47);
+}
+
+ul li button:hover{
+    background-color: rgba(73, 71, 71, 0.548);
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+
+ul li p{
+    color: rgb(127, 80, 170);
+    position: absolute;
+    top: 2px;
+    left: 248px;
+    font-size: 15px;
+    font-weight:600;
+}
+
+#clear{
+    display: flex;
+    height: 3vw;
+    width: fit-content;
+    background: linear-gradient(100deg, rgb(106, 182, 212) , blue);
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 2px solid black;
+}
+
+#clear:hover{
+    background:linear-gradient(100deg, blue , rgb(90, 164, 194)); 
+    height: 3.2vw;
+    width: fit-content;
+    box-shadow:0 4px 8px 0 slateblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button.fas.fa-pencil{
+    width: 22px;
+    border: 1px solid black;
+    position: absolute;
+    top: 17px;
+    left: 419px;
+    display: flex;
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+    background: aquamarine;
+    padding: 5px;
+}
+
+button.fas.fa-pencil:hover{
+    background-color: rgba(73, 71, 71, 0.548);
+}
+
+.para{
+    color: black;
+}
+
+#taskspan {
+    /* background-color: red; */
+    max-width: 45%;
+    height: auto; /* Set height to auto */
+    display: block; /* Change to block display */
+    overflow-wrap: break-word; /* Allow text to wrap */
+    overflow: hidden;
+    word-wrap: break-word; /* For older browser compatibility */
+}
+
+
+#edit-complete{
+    border-radius: 10px;
+    border: 2px solid #78e754;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 17px;
+    left: 388px;
+    cursor: help;
+}
+
+#edit-complete:hover::after{
+
+content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  left: 100%; /* Position the tooltip to the right of the image */
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap; /* Prevent text from wrapping */
+  z-index: 1; 
+}
